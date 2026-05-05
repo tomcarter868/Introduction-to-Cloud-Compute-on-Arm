@@ -89,7 +89,7 @@ interfaces for connection to on-chip and off-chip components. The size
 and configuration of many of these components is chosen during the
 design and manufacturing process by the licensee.
 
-<img src="./media/image5.png" style="width:5.75in;height:3.09375in" />
+<img src="./media/image5.png" alt="CSS N2 system block diagram showing CPUs, interconnect (CMN-700), memory, I/O, and system control components. The learner should notice how compute, memory, and I/O are connected through the mesh interconnect. This matters for understanding data flow and system scalability." style="width:5.75in;height:3.09375in" />
 
 Figure 5: Neoverse CSS N2 Block Diagram
 
@@ -117,8 +117,8 @@ control of the device, power monitoring of each individual processor and
 of the system as a whole, the external management interface (SCMI) and
 security support.
 
-**A diagram of the Neoverse N2 Reference Design is shown in Figure** **.
-The Neoverse N2 Reference Design is compliant with Arm Server Base
+**A diagram of the Neoverse N2 Reference Design is shown in Figure6**.
+**The Neoverse N2 Reference Design is compliant with Arm Server Base
 System Architecture version 6.0, indicating compatibility with many
 standard software products.**
 
@@ -134,7 +134,7 @@ D–cache, and a 1 MB private, unified L2 cache;**
 - **32 MB System Level Cache in the interconnect.**
 
 <img src="./media/image6.png" style="width:6.26806in;height:3.8125in"
-alt="A computer screen shot of a diagram Description automatically generated" />
+alt="Detailed SoC architecture with labeled blocks (processor, interconnect, memory, I/O virtualization, debug, SCP/MCP, clock control). The key insight is how subsystems interact through interconnects and control units. This matters for debugging, performance tuning, and system integration." />
 
 Figure 6 – Neoverse N2 Reference Design
 
@@ -271,7 +271,7 @@ Application Processor (AP), System Control Processor (SCP), and
 Manageability Control Processor (MCP).
 
 <img src="./media/image7.png" style="width:6.26806in;height:4.43264in"
-alt="A screenshot of a computer program Description automatically generated" />
+alt="Arm boot flow showing firmware stages (BL1, BL2, BL31, BL32/BL33), OS loader, and runtime services. The learner should notice the sequence from ROM to OS and how responsibilities are divided." />
 
 Figure 7 – High–level software illustration of a Neoverse Reference
 Design.
@@ -282,7 +282,7 @@ requires the addition of Realm Software (executing on the AP) to manage
 the Realm Control Extension hardware.
 
 <img src="./media/image8.png" style="width:6.26806in;height:2.77639in"
-alt="A screenshot of a computer software Description automatically generated" />
+alt="Expanded software stack including Realm, Non-secure, Secure, and external supervisory processors (SCP/MCP), plus RSE runtime. The key takeaway is how multiple execution environments and controllers coordinate." />
 
 Figure 8 – High–level software illustration of a Neoverse Reference
 Design with RME.
@@ -473,7 +473,7 @@ In overview, the sequence, shown in Figure 9, is as follows:
 > OS requests power-on of CPUs on secondary chip(s).
 
 <img src="./media/image9.png" style="width:6.26806in;height:3.29097in"
-alt="A diagram of a flowchart Description automatically generated" />
+alt="Boot sequence across primary and secondary chips, showing handoffs between firmware stages and components like SCP/MCP and RMM." />
 
 Figure 9 – Boot Sequence Flow Diagram
 
