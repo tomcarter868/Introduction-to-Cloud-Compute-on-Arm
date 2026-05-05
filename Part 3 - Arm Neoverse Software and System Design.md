@@ -252,7 +252,7 @@ applications to Arm Neoverse? \| Arm Learning
 Paths</u>](https://learn.arm.com/migration/))
 
 <img src="./media/image12.png" style="width:6.26806in;height:2.97917in"
-alt="A screen shot of a computer AI-generated content may be incorrect." />
+alt="Bottom-up migration approach: start with minimal system, fix issues gradually, then add components back. The key takeaway is iterative stabilization before full functionality." />
 
 Figure 12 - A bottom-up migration approach ([<u>How can I migrate
 applications to Arm Neoverse? \| Arm Learning
@@ -350,7 +350,7 @@ saving on per-core licensing costs.
 Figure 13 below shows some of the factors which may be at play in the
 determination of suitable performance goals and metrics.
 
-<img src="./media/image13.png"
+<img src="./media/image13.png" alt="System performance factors diagram showing memory speed, parallelism, compute speed, throughput, response time, and storage. The learner should see that performance is multi-dimensional. "
 style="width:3.18733in;height:3.07595in" />
 
 Figure 13 - Some factors which impact performance goals
@@ -389,10 +389,10 @@ data from a relatively simple database, then memory speed is likely to
 be the limiting factor in performance; if it is carrying out some form
 of processing or computation on the data, either after retrieval or
 prior to storage, then (depending on the complexity of the computation)
-compute speed may be more important. Figure 13 illustrates the
+compute speed may be more important. Figure 14 illustrates the
 relationship between these concepts.[^8]
 
-<img src="./media/image14.png"
+<img src="./media/image14.png" alt="Graph dividing memory-bound and compute-bound regions. The learner should notice that performance depends on whether memory or compute is the limiting factor. This is important for choosing the right optimization strategy."
 style="width:6.26806in;height:3.30556in" />
 
 Figure 14 - Compute-bound vs Memory-bound
@@ -420,8 +420,11 @@ platforms are particularly efficient at doing this. They achieve this by
 employing one or more of multi-tasking, multi-threading, and
 multi-processing.
 
-<img src="./media/image15.svg"
+<img src="./media/image15.svg" alt="Thread scheduling on a single CPU with a single-threaded multitasking system switching over time. The learner should observe context switching between processes."
 style="width:2.92292in;height:5.46528in" />
+
+Figure 15 - Multi-tasking
+
 
 **Multi-tasking**
 
@@ -445,8 +448,6 @@ another task;
 
 - an external event results in a trigger to switch to a task which can
 process that event.
-
-Figure 15 - Multi-tasking
 
 Figure 15 illustrates the switching between processes in a
 single-processor, single-threaded multi-tasking system. There is a
@@ -475,7 +476,7 @@ Neoverse E1 is the only processor in the Neoverse family to support
 hardware multi-threading, and is not available as a public cloud
 instance.
 
-> <img src="./media/image16.png" style="width:5.39652in;height:6.2in" />
+> <img src="./media/image16.png" alt="Two CPUs sharing memory, each running processes with access to both private and shared memory. The learner should notice how data is shared across cores. " style="width:5.39652in;height:6.2in" />
 
 Figure 16 – Hardware Multi-threading
 
@@ -507,7 +508,7 @@ efficiently. There is clearly some increased latency involved in
 accessing data, which is in shared memory, but intelligent caching
 strategies improve this considerably.
 
-> <img src="./media/image17.png"
+> <img src="./media/image17.png" alt="Symmetric multi-processing showing how a single instance of the operating system executes across a number of processors simultaneously"
 > style="width:4.81223in;height:4.41823in" />
 
 Figure 17 - Symmetric Multi-processing
@@ -609,7 +610,7 @@ stages:
     dependent completely on the performance of third-party shipping
     companies.
 
-<img src="./media/image18.png"
+<img src="./media/image18.png" alt="User request flow through a web system: user → web app → database → payment provider → back to user. The learner should follow the sequence of interactions. "
 style="width:6.26806in;height:3.35347in" />
 
 Figure 18 - Making a purchase
@@ -1001,7 +1002,7 @@ P – Perl, PHP or Python
 
 Such a stack is illustrated in Figure 19.
 
-<img src="./media/image19.png"
+<img src="./media/image19.png" alt="Typical LAMP-style stack: scripting layer (PHP/Perl/Python) on top of Apache and MySQL, running on Linux. The learner should see how layers build on each other."
 style="width:3.81543in;height:2.22518in" />
 
 Figure 19 - Example LAMP Stack
@@ -2818,10 +2819,10 @@ better to identify the portions of the application which would benefit
 from such aggressive optimization and then enable these options only for
 that part. A profiler can help to do this.
 
-<img src="./media/image20.png"
+<img src="./media/image20.png" alt="Software development cycle: source → compile → binary → execute → profiling feedback loop. The learner should notice the feedback from profiling to improve code."
 style="width:6.26806in;height:3.02917in" />
 
-Figure 20 - Profile-guided Optimization
+Figure 20 - Profile-guided optimization
 
 Figure 20 illustrates the process. Instrumented source code is compiled
 and then executed on the platform under the control of the profiler.
