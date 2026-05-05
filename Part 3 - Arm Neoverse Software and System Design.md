@@ -245,7 +245,7 @@ next one.
 These two approaches are illustrated in Figure 11 and Figure 12.
 
 <img src="./media/image11.png" style="width:6.26806in;height:2.97917in"
-alt="A screen shot of a computer AI-generated content may be incorrect." />
+alt="Top-down migration approach: move application first, then fix dependencies step-by-step. The learner should notice the sequence of resolving missing libraries. This matters for planning incremental porting to Arm systems." />
 
 Figure 11 - A top-down migration approach ([<u>How can I migrate
 applications to Arm Neoverse? \| Arm Learning
