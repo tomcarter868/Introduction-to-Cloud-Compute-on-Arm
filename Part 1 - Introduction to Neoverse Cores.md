@@ -615,9 +615,9 @@ security gateway code
 
 A typical usage model for these exception levels is shown in Figure 1.
 
-<img src="./media/image1.png" style="width:5.75in;height:3.98958in" />
+<img src="./media/image1.png" alt="Shows Arm exception levels (EL0–EL3) stacked from application down to firmware/secure monitor, with privilege increasing toward EL3. The learner should notice how software layers map to privilege levels. This matters because it explains where code runs and what level of system control it has." style="width:5.75in;height:3.98958in" />
 
-Figure 1 – Exception levels
+ 1 – Exception levels
 
 Movement between ELs occurs when taking, or returning from, an
 exception. The general rule is that on taking an exception, the EL can
@@ -663,7 +663,7 @@ AArch64 software executing at EL0.
 software executing at EL1.
 
 <img src="./media/image2.png" style="width:6.26806in;height:1.62847in"
-alt="A close-up of a screen Description automatically generated" />
+alt="Compares AArch32 and AArch64 execution at EL0 and EL1, showing that a 64-bit OS can run both 32-bit and 64-bit apps, while a 32-bit OS cannot run 64-bit apps. The key takeaway is compatibility constraints between execution states. This matters when choosing OS and application architectures." />
 
 Figure 2– Exception levels and Execution States
 
@@ -736,7 +736,7 @@ system, the only route into Secure state is through a Secure Monitor,
 which executes in EL3. An example system configuration is shown in
 Figure 3.
 
-<img src="./media/image3.png" style="width:5.75in;height:2.36458in" />
+<img src="./media/image3.png" alt="Illustrates secure vs non-secure worlds across EL0–EL3, including trusted OS/services and normal OS/apps. The learner should notice how workloads are split between secure and non-secure environments. This matters for understanding TrustZone isolation and security boundaries." style="width:5.75in;height:2.36458in" />
 
 Figure 3 – Exception Levels, Security States and Execution States
 
@@ -750,7 +750,7 @@ specific RME hardware features, this provides robust
 compartmentalization and greatly enhances security. Figure 4 shows an
 example configuration when RME is implemented.
 
-<img src="./media/image4.png" style="width:5.75in;height:2.69792in" />
+<img src="./media/image4.png" alt="Extends the model with three domains: Realm, Non-secure, and Secure, each with its own OS/services and managed by a Realm Manager or SPM. The learner should focus on how isolation domains coexist at the same privilege levels. This matters for confidential computing and stronger workload isolation." style="width:5.75in;height:2.69792in" />
 
 Figure 4 – RME Security States
 
