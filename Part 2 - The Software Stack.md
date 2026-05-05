@@ -669,7 +669,11 @@ the details of the underlying platform from applications that wish to
 use the services it provides.
 
 <img src="./media/image10.png" style="width:6.26806in;height:1.69444in"
-alt="A blue and yellow background with arrows AI-generated content may be incorrect." />Middleware
+alt="Abstract diagram showing data movement through layers (memory or cache hierarchy) with arrows indicating repeated access patterns. The learner should notice how data flows and loops through layers." />
+
+Figure 10 - The Place and Architecture of Middleware
+
+Middleware
 may be highly integrated and specific, such as a game engine that
 provides audio, video, animation, and game-play services to a gaming
 application. Or it may be fundamentally distributed and general-purpose,
